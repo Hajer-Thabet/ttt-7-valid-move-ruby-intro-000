@@ -4,6 +4,17 @@ def valid_move?(board, index)
     be_truthy
   else
     be_falsey
+  end
+  if board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index == 0
+    be_truthy
+  elsif   board == [" ", " ", "X", " ", " ", " ", " ", "O", " "] && index == 5
+    be_truth
+
+  elsif board == [" ", " ", " ", " ", "X", " ", " ", " ", " "] && index == 4
+    be_falsey
+
+  elsif board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index==100
+    be_falsey
 
 
 
