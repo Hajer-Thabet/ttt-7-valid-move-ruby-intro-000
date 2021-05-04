@@ -16,7 +16,7 @@ def valid_move?(board, index)
 
   elsif board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index==100
     false
-  
+
 
 
 
