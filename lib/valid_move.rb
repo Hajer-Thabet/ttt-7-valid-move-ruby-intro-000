@@ -4,11 +4,11 @@ def valid_move?(board, index)
     be_truthy
   else
     be_falsey
-    
 
-  
 
-  
+
+
+
 
   end
 
