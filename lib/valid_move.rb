@@ -1,16 +1,12 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-
-  if board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index == 0
+  if (position_taken?==true) && (index.between?(0, 8)) && (board[index]== " ")
     be_truthy
-  elsif   board == [" ", " ", "X", " ", " ", " ", " ", "O", " "] && index == 5
-    be_truth
-
-  elsif board == [" ", " ", " ", " ", "X", " ", " ", " ", " "] && index == 4
+  else
     be_falsey
+    
 
-  elsif board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index==100
-    be_falsey
+  
 
   
 
