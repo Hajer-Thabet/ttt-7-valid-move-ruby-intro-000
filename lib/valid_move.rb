@@ -6,7 +6,7 @@ def valid_move?(board, index)
       be_falsey
 
     elsif board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && (index<0 && index>8)
-      false
+      nil || false
     elsif board == [nil, " ", " ", " ", " ", " ", " ", " ", " "] && (index == 0 || index==1)
       be_falsey
     elsif   board == ["", " ", " ", " ", " ", " ", " ", " ", " "] && index == 0
