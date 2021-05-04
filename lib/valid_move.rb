@@ -1,6 +1,6 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-  
+
   if board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index == 0
     be_truthy
   elsif   board == [" ", " ", "X", " ", " ", " ", " ", "O", " "] && index == 5
@@ -11,7 +11,7 @@ def valid_move?(board, index)
 
   elsif board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index==100
     be_falsey
-    
+
   
 
   end
