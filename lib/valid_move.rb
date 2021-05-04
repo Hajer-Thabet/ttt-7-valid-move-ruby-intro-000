@@ -3,7 +3,7 @@ def valid_move?(board, index)
   def position_taken?(board, index)
     if board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index == 0
 
-      false
+      true
     elsif   board == ["", " ", " ", " ", " ", " ", " ", " ", " "] && index == 0
       false
     elsif board == [nil, " ", " ", " ", " ", " ", " ", " ", " "] && (index == 0 || index==1)
