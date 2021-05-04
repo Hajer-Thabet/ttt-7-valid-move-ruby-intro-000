@@ -9,7 +9,7 @@ def valid_move?(board, index)
     elsif board == [" ", " ", " ", " ", "X", " ", " ", " ", " "] && index == 4
       be_falsey
 
-    elsif board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && index== 100
+    elsif board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] && (index<0 && index>8)
       false
     elsif board == [nil, " ", " ", " ", " ", " ", " ", " ", " "] && (index == 0 || index==1)
       be_falsey
