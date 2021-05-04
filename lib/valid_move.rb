@@ -5,13 +5,13 @@ def valid_move?(board, index)
       be_truthy
       
     elsif   board == ["", " ", " ", " ", " ", " ", " ", " ", " "] && index == 0
-      false
+      be_falsey
     elsif board == [nil, " ", " ", " ", " ", " ", " ", " ", " "] && (index == 0 || index==1)
-      false
+      be_falsey
 
     elsif board == ["X", " ", " ", " ", " ", " ", " ", " ", "O"] && (index == 0 || index==8) &&
       index.between?(0, 8)
-      true
+      be_truthy
 
     end
 
