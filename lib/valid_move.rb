@@ -19,7 +19,7 @@ def valid_move?(board, index)
   elsif position_taken?(board, index)== true
     true
   end
-    
+
 
  end
 
